@@ -19,17 +19,28 @@
     font-family:'Noto Sans KR', sans-serif;
     font-weight:1000
   }
-  p{
-    display:inline-block;
-  }
+.grid {
+  width:100%;
+  margin:0 auto;
+  text-align:center;
+}
+.grid_item {
+  width:450px;
+  height:100px;
+  display:inline-block;
+}
   </style>
 </head>
 <body>
   <h1 style="margin-bottom:10px;">LIVE 비닐하우스</h1>
   <h3 style="margin-top:0px;">온습도</h3>
+<div class="grid">
+<div class="grid_item first"><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1087101/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe></div>
+<div class="grid_item two"><iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1087101/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe></div><br>
+</div>
 <p>
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1087101/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
-<iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1087101/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+<h3>날씨 정보</h3>
+<iframe width="100%" height="1050" style="border: 1px solid #cccccc;" src="https://hosting.coreintec.com/weather/iframe/wellihilli/"></iframe>
 </p>
 </body>
 </html>
